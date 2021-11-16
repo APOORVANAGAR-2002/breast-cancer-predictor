@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { Header } from './components/Header';
+import InputFields from './components/InputFields';
+import { Landing } from './components/Landing';
+import { Result } from './components/Result';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      background: '#6471b5',
+      height: '100vh'
+    }}>
+      <Landing />
+      <Header />
+      <InputFields />
+      <Result />
     </div>
   );
 }
