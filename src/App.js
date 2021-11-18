@@ -14,6 +14,7 @@ function App() {
       <Header />
       <InputFields />
       <Result />
+      <p>My Token = {window.token}</p>
     </div>
   );
 }
