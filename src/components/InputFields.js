@@ -41,7 +41,7 @@ function InputFields() {
 
     let submitForm = (event) => {
         console.log(data);
-        axios.post("http://localhost:5000/submit", data).then((response) => {
+        axios.post("http://127.0.0.1:5000/submit", data).then((response) => {
             console.log(response);
         }).catch((error) => {
             console.log(error);
