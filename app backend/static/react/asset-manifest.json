@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/react/css/main.5739ad41.chunk.css",
+    "main.js": "/static/react/js/main.020e88c8.chunk.js",
+    "main.js.map": "/static/react/js/main.020e88c8.chunk.js.map",
+    "runtime-main.js": "/static/react/js/runtime-main.ca8a5d69.js",
+    "runtime-main.js.map": "/static/react/js/runtime-main.ca8a5d69.js.map",
+    "css/2.e3fc3d41.chunk.css": "/static/react/css/2.e3fc3d41.chunk.css",
+    "js/2.ef0a2e62.chunk.js": "/static/react/js/2.ef0a2e62.chunk.js",
+    "js/2.ef0a2e62.chunk.js.map": "/static/react/js/2.ef0a2e62.chunk.js.map",
+    "js/3.1102b6fd.chunk.js": "/static/react/js/3.1102b6fd.chunk.js",
+    "js/3.1102b6fd.chunk.js.map": "/static/react/js/3.1102b6fd.chunk.js.map",
+    "../../templates/index.html": "/static/react/../../templates/index.html",
+    "css/2.e3fc3d41.chunk.css.map": "/static/react/css/2.e3fc3d41.chunk.css.map",
+    "css/main.5739ad41.chunk.css.map": "/static/react/css/main.5739ad41.chunk.css.map",
+    "js/2.ef0a2e62.chunk.js.LICENSE.txt": "/static/react/js/2.ef0a2e62.chunk.js.LICENSE.txt",
+    "media/index.css": "/static/react/media/comfortaa-vietnamese-400-normal.f86ae056.woff2",
+    "media/magnifyingLens.db68cd96.jpg": "/static/react/media/magnifyingLens.db68cd96.jpg"
+  },
+  "entrypoints": [
+    "js/runtime-main.ca8a5d69.js",
+    "css/2.e3fc3d41.chunk.css",
+    "js/2.ef0a2e62.chunk.js",
+    "css/main.5739ad41.chunk.css",
+    "js/main.020e88c8.chunk.js"
+  ]
+}
