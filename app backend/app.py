@@ -1,6 +1,5 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, redirect
 import pickle
-# import sys
 from flask_cors import CORS, cross_origin
 import json
 import numpy as np
@@ -18,11 +17,11 @@ print("2")
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template("index.html")
+    return render_template("index.html", prediction = "None")
 
 
-@app.route('/submit', methods = ['POST'])
-# @cross_origin()  // ye comment krr diya. Alag alag try kiye the lekin fayda nhi. Agar tu request.data jaise se kaam chala skti hai to krlena please
+@app.route('/submit', methods = ['POST', 'GET'])
+# @cross_origin() 
 def submit():
     print("Request received")
     bytes_data = request.data
@@ -38,11 +37,14 @@ def submit():
     df = pd.DataFrame(features, columns = ['mean_radius', 'mean_texture', 'mean_perimeter', 'mean_area', 'mean_smoothness'])
 
     result = model.predict(df)
+    print(result, type(result))
     print("Model predicted")
-    print(result)
+    
     param = {1:"BENIGN", 0:"MALIGNANT"}
     return jsonify({"result": "You have chances of {} Breast Cancer".format(param[result[0]])})
-    # return render_template("index.html", prediction = "You have chances of {} Breast Cancer".format(param[result[0]]))
+    
+# @app.route('/result')
+# def result():
 
 
 if(__name__ == "__main__"):
