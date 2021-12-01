@@ -46,7 +46,9 @@ function InputFields() {
         }).catch((error) => {
             console.log(error);
         }) 
+
     }
+    
 
     return (
         <Grid container style={{

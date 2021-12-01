@@ -25,11 +25,18 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <script>window.token = "{{token}}"</script>
+    <!-- <script>window.token = "{{token}}"</script> -->
+    <!-- <script>window.data={prediction}</script> -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <script>
+      // initial_data = {{prediction}}
+      // console.log(initial_data)
+    </script>
+    <div id="root">
+      <!-- <h1>This is the result of your data: {{prediction}}</h1> -->
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -40,6 +47,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!--  -->
     <script src="/src/components/InputFields.js" type="text/jsx"></script>
   </body>
 </html>
